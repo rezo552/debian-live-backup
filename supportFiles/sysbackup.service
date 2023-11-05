@@ -5,7 +5,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=echo "Test" > /tmp/test
+ExecStart=cp /run/live/medium/sysbackup.sh /run && chmod +x /run/sysbackup.sh && /run/sysbackup.sh
 
 [Install]
 WantedBy=multi-user.target

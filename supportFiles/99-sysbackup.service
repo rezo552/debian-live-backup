@@ -1,0 +1,7 @@
+
+[Unit]
+Description=Backing up drives
+
+[Service]
+Type=oneshot
+ExecStart=echo "Test" > /tmp/test

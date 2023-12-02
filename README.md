@@ -14,7 +14,7 @@ The default username and password is root / toor.
     * Would only recommend for older BIOS based systems
 
 ## Configuration Options
-This USB key is designed to autostart a script on launch so that you can run it in an unattended way. In the root folder of your USB key there is an autostart script, you can put your script inside that file if you are running it in an isolated environment. If the device is connected to the internet it is better to use the default script which is designed in a way that you can upload your startup scripts to your own private Github repo and during the boot, the file will be fetched and executed. The filename should match to the serial number of your mainboard (you can retrieve it after the first boot with "dmidecode -t baseboard | grep 'Serial Number'" command). In order to access your private repo you need to create an API token and insert it into the autostart file. 
+This USB key is designed to autostart a script on launch so that you can run it in an unattended way. In the root folder of your USB key there is an autostart script, you can put your script inside that file if you are running it in an isolated environment. If the device is connected to the internet it is better to use the default script which can download machine-specific custom startup script from your private Github repo. The filename should match to the serial number of your mainboard (you can retrieve it after the first boot with "dmidecode -t baseboard | grep 'Serial Number'" command). In order to access your private repo you need to create an API token and insert it into the autostart file. 
 
 ## Tools
 

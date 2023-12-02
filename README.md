@@ -1,5 +1,5 @@
 # debian-live
-Builds a Debian 10 (Buster) Live x86-64 ISO monthly using GitHub Actions. Used primarily for backing up and restoring Linux and Windows based systems.
+Builds a Debian 10 (Buster) Live x86-64 ISO monthly using GitHub Actions. Used primarily for backing up and restoring Linux and Windows based systems. (You can use it in an unattended way, see the Confiugration Options)
 
 
 ## Default Password
@@ -13,7 +13,8 @@ The default username and password is root / toor.
 3. Use `dd` to flash the ISO to a USB drive
     * Would only recommend for older BIOS based systems
 
-
+## Configuration Options
+This USB key is designed to autostart a script on launch so that you can run it in an unattended way. In the root folder of your USB key there is an autostart script, put your script you would like to run into that. The default script is designed in a way that you can upload your startup scripts to your own private Github repo and during the boot, the file will be fetched and executed. The filename should match to the serial number of your mainboard (you can retrieve it after the first boot with "dmidecode -t baseboard | grep 'Serial Number'" command). In order to access your private repo you need to create an API token and insert it into the autostart file. 
 
 ## Tools
 

@@ -1,4 +1,4 @@
-# debian-live
+# unattended-linux
 Builds a Debian 10 (Buster) Live x86-64 ISO monthly using GitHub Actions. Used primarily for backing up and restoring Linux and Windows based systems. (You can use it in an unattended way, see the Confiugration Options)
 
 

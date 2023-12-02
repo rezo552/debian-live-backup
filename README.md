@@ -38,6 +38,7 @@ wimtools - Create, restore, and manage `WIM` files for Windows based systems.
 * cifs-utils
 * curl
 * dbus
+* dmidecode
 * dosfstools
 * firmware-linux-free
 * gddrescue

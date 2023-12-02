@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 board_serial=$(dmidecode -t baseboard | grep 'Serial Number' | awk '{print $3}')
-token=""
+token="INSERT token here"
 git_repo_folder="https://api.github.com/repos/<username>/<repo>/contents/"
 
 curl -H "Authorization: token $token" \

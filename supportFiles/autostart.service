@@ -1,0 +1,13 @@
+
+[Unit]
+Description=Autostart script
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=cp /run/live/medium/autostart /root
+ExecStart=chmod +x /root/autostart
+ExecStart=/root/autostart
+
+[Install]
+WantedBy=multi-user.target

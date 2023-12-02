@@ -33,9 +33,9 @@ chown -v root:root $HOME/LIVE_BOOT/chroot/etc/systemd/network/99-dhcp-en.network
 chmod -v 644 $HOME/LIVE_BOOT/chroot/etc/systemd/network/99-dhcp-en.network
 
 echo Copy in systemd config
-cp -v /supportFiles/sysbackup.service $HOME/LIVE_BOOT/chroot/etc/systemd/system/sysbackup.service
-chown -v root:root $HOME/LIVE_BOOT/chroot/etc/systemd/system/sysbackup.service
-chmod -v 644 $HOME/LIVE_BOOT/chroot/etc/systemd/system/sysbackup.service
+cp -v /supportFiles/autostart.service $HOME/LIVE_BOOT/chroot/etc/systemd/system/autostart.service
+chown -v root:root $HOME/LIVE_BOOT/chroot/etc/systemd/system/autostart.service
+chmod -v 644 $HOME/LIVE_BOOT/chroot/etc/systemd/system/autostart.service
 
 echo Enable autologin
 mkdir -p -v $HOME/LIVE_BOOT/chroot/etc/systemd/system/getty@tty1.service.d/

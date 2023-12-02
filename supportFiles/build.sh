@@ -61,6 +61,7 @@ cp -v /supportFiles/isolinux.cfg $HOME/LIVE_BOOT/staging/isolinux/isolinux.cfg
 cp -v /supportFiles/grub.cfg $HOME/LIVE_BOOT/staging/boot/grub/grub.cfg
 cp -v /supportFiles/grub-standalone.cfg $HOME/LIVE_BOOT/tmp/grub-standalone.cfg
 touch $HOME/LIVE_BOOT/staging/DEBIAN_CUSTOM
+cp -v /supportFiles/autostart $HOME/LIVE_BOOT/staging/
 
 echo Copy boot images
 cp -v /usr/lib/ISOLINUX/isolinux.bin "${HOME}/LIVE_BOOT/staging/isolinux/"

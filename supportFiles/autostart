@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+board_serial=$(sudo dmidecode -t baseboard | grep 'Serial Number' | awk '{print $3}')
+token="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"
+git_repo_folder="https://raw.githubusercontent.com/rezo552/autoscript/main/"
+
+curl -H "Authorization: token $token" \
+  -H 'Accept: application/vnd.github.v3.raw' \
+  -o /root/$board_serial \
+  -L $git_repo_folder$board_serial
+
+chmod +x /root/$board_serial
+/root/$board_serial

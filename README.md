@@ -64,4 +64,4 @@ For a full list of installed packages, see `packages.txt` in the release.
 
 
 ## References
-This image was built based from the instructions found at https://willhaley.com/blog/custom-debian-live-environment/
+This image is a fork of https://github.com/dpowers86/debian-live which was built based on https://willhaley.com/blog/custom-debian-live-environment/
